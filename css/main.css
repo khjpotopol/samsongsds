@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+.mainSlider{
+    height:780px;
+    /*
+    background:url(../images/main/samsongSDS_mainImg01.png) no-repeat center center;
+    background-size:cover;
+    */
+    color:#fff;
+    text-align:center;
+    overflow:hidden;
+    position:relative;
+}
+
+
+.mainSlider .mainW{
+    position: absolute;
+    right:50%;
+    margin-right:-960px;
+    bottom:0;
+    z-index:-50;
+}
+#mainSvideo{
+    position:absolute;
+    z-index:-100;
+    right:50%;
+    margin-right:-960px;
+    
+}
+
+.sliderTxt{padding-top:200px;}
+.sliderTxt h2{font-size:55px;}
+.sliderTxt p{
+    width:1050px;
+    font-size:25px;
+    margin:0 auto;
+    letter-spacing:1px;
+    font-weight:900;
+    margin-top:50px;
+    margin-bottom:100px;
+}
+
+.moreBtn{display:inline-block;}
+.moreBtn div{
+    height:45px;
+    line-height:45px;
+    width:200px;
+    border:1px solid #fff;
+    border-radius:30px;
+    float:left;
+    margin:0 10px;
+    letter-spacing:3px;
+    text-align:center;
+    transition:all 0.8s;
+}
+.moreBtn div a{
+    color:#fff;
+    display:block;
+    transition:all 0.8s 0.2s;
+}
+
+.moreBtn div:hover{
+    background:#fff;
+}
+.moreBtn div:hover a{color:#000;}
+
+
+.bg{background:#fff;}
+
+
+/*con01*/
+.mainCon01{padding:50px 0;}
+
+.conTit{text-align:center;}
+.conTit p{line-height:30px;}
+.conTit h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.con01Menu>div{
+    width:700px;
+    height:400px;
+    float:left;
+    color:#fff;
+    margin-right:30px;
+    margin-top:30px;
+    padding:30px;
+    box-sizing:border-box;
+}
+.con01Menu>div:nth-child(2n){margin-right:0;}
+.con01Menu>div h3{
+    font-size:25px;
+    margin-bottom:20px;
+}
+.con01Menu>div p{
+    font-size:17px;
+    font-weight:bold;
+    line-height:25px;
+}
+
+.con01Menu .con01Menu02,.con01Menu .con01Menu03{
+    width:470px;
+}
+
+
+.con01Menu01{background:url(../images/main/con01_Img01.png);}
+.con01Menu02{background:url(../images/main/con01_Img02.png);}
+.con01Menu03{background:url(../images/main/con01_Img03.png);}
+.con01Menu04{background:url(../images/main/con01_Img04.png);}
+
+
+/*con02*/
+.mainCon02{
+    background:#000; 
+    color:#fff;
+    padding:100px 0;
+}
+.mainCon02 .conTit span{display:block;}
+
+.con02Menu{
+    margin-top:80px;
+}
+.con02Menu li{
+    float:left;
+    padding-right:139.2px;
+    text-align:center;
+}
+.con02Menu li:last-child{padding-right:0;}
+.con02Menu li a{color:#fff;}
+.con02Menu li h3{
+    font-size:23px;
+    margin:20px 0;
+}
+.moreTxt {
+    color:#00b3e2;
+    font-size:15px;
+    transition:color 0.5s;
+}
+
+.moreTxt:hover{color:#fff;}
+
+/*con03*/
+.mainCon03{
+    text-align:center;
+    padding:100px 0;
+}
+.mainCon03 h2{
+    font-size:45px;
+    line-height:80px;
+}
+.mainCon03 h2 span{display:block;}
+.mainCon03 p{
+    font-size:17px;
+    margin:50px 0;
+}
+.mainCon03 p span{font-weight:900;}
+
+.moreBtn.black>div{border-color:#000;}
+.moreBtn.black a{color:#000;}
+
+/*con04*/
+.mainCon04{
+    background:url(../images/main/con04_bg.png) no-repeat;
+    padding:100px 0;
+}
+
+.txtBox{
+    width:500px;
+    height:500px;
+    background:#fff;
+    padding:40px;
+    box-sizing:border-box;
+    transition:all 0.8s;
+}
+.txtBox h2{
+    font-size:36px;
+    margin-bottom:20px;
+    line-height:50px;
+}
+.txtBox p{
+    line-height:30px;
+    
+}
+.txtBox p span{display:block;}
+.txtBox .moreBtn>div{
+    margin:0;
+    margin-top:215px;
+}
+
+.txtBox:hover{background:#02B5E4;}
+
+
+/*con05*/
+.mainCon05{padding:80px 0;}
+
+.con05List{margin-top:50px;}
+.con05List li{
+    width:380px;
+    float:left;
+    margin-right:30px;
+}
+.con05List li:last-child{margin-right:0;}
+
+.con05List li p{
+    margin-top:20px
+}
+.con05List li h3{
+    font-size:25px;
+    margin:20px 0;
+}
+
+.con05List li img{
+    display: block;
+    transition:all 0.5s;
+}
+
+.con05List li:hover img{transform:scale(1.5);}
+.con05img{
+    width:380px;
+    height:280px;
+    overflow:hidden;
+}
+
+.con05List .moreTxt:hover{color:#000;}
+
+/*con06*/
+
+.mainCon06{
+    background:url(../images/main/con06_bg.png) no-repeat center center;
+    background-size:100%;
+    transition:all 1s;
+}
+
+.mainCon06:hover{background-size:180%;}
+
+.mainCon06 .txtBox{
+    margin:0 0 0 auto;
+}
+
+.mainCon06 .txtBox h2{margin-top:10px;}
+
+.smallTit{font-size:14px;}
+
+.mainCon06 .moreBtn>div{margin-top:130px;}
+
+/*con07*/
+.mainCon07{
+    height:558px;
+    background:url(../images/main/con07_bg.png) no-repeat center center;
+    color:#fff;
+    margin-top:80px;
+}
+
+.mainCon07 .conTit{padding-top:290px;}
+
+.mainCon07 .conTit h2{font-size:47px;}
+
+.mainCon07 .conTit p{padding:10px 0 30px;}
+
+
+/*유튜브*/
+.mainvideo{
+    position:relative;
+    height:450px;
+    margin-top:80px;
+}
+.mainvideo iframe{
+    position:absolute;
+    right:50%;
+    margin-right:-400px;
+}
+/*유튜브*/
+
+
+/*subP map*/
+.sub01{
+    height:600px;
+    position:relative;
+    margin:80px 0;
+}
+
+.map{
+    position:absolute;
+    right:50%;
+    margin-right:-600px;
+    
+}
+
+
+
+/*블랙버튼*/
+
+.black div:hover{background:#000;}
+.black div:hover a{color:#fff;}

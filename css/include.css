@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/*header*/
+#header{
+    background:#fff;
+    width:100%;
+    position:fixed;
+    margin-right:-960px;
+    z-index:100;
+}
+
+.container{padding-top:85px;}
+
+
+/* 서브메뉴01
+#header>.inner{position:relative;}
+*/
+
+.hLeft{
+    width:920px;
+    float:left;
+}
+
+.util{
+    text-align:right;
+    font-size:12px;
+    padding-top:10px;
+}
+.util li{
+    display:inline-block;
+    margin-left:30px;
+}
+.utilLang a{
+    background:url(../images/common/aroow_B.png) no-repeat right center;
+    padding-right:10px;
+}
+
+.hBottom{
+    margin-top:20px;
+    line-height:21px;
+}
+
+.hBottom h1{float:left;}
+
+.gnb{
+    float:left;
+    font-size:18px;
+}
+.gnb>li{
+    height:32px;
+    width:100px;
+    text-align:center;
+    float:left;
+    padding:5px 10px 0;
+    margin-left:20px;
+    position:relative;
+}
+
+.gnb>li:first-child{margin-left:50px;}
+
+.gnb>li::after{
+    content:""; display:block;
+    width:0; height:3px;
+    background:#02B5E4;
+    margin-top:8px;
+    transition:all 0.5s;
+    margin:-3px auto;
+}
+.gnb>li:hover::after{
+    width:100%;
+}
+
+.gnb li a{
+    display:block;
+    height:100%;
+}
+
+.search{
+    float:right;
+    padding-top:5px;
+}
+
+.hBtn{
+    width:230px;
+    height:85px;
+    line-height:85px;
+    background-color:#02b5e4;
+    float:right;
+    text-align:center;
+}
+.hBtn a{
+    color:#fff;
+    display:block;
+}
+
+
+/*서브메뉴01*/
+/*
+.hSubMenu{
+    position:absolute;
+    background:#fff;
+    width:0;
+    height:0;
+    left:0;
+    overflow:hidden;
+    transition:height 0.5s;
+}
+
+.gnb li:hover .hSubMenu{
+    width:1200px;
+    height:300px;
+}
+
+.hSubMenu li{
+   
+}
+.hSubMenu li a{
+    padding:15px;
+    font-size:14px;
+}
+*/
+
+/*서브메뉴02*/
+.hSubMenu{
+    position:absolute;
+    z-index:10;
+    left:-14px;
+    width:150px;
+    max-height:0;
+    overflow:hidden;
+    background-color:#fff;
+    transition:max-height 1s;
+    font-size:14px;
+}
+.hSubMenu li a{
+    padding:20px 20px;
+}
+.gnb li:hover .hSubMenu{
+    max-height:300px;
+}
+
+.hSubMenu li:hover a{
+    background-color:#02b5e4;
+    color:#fff;
+}
+
+
+
+/*푸터*/
+#footer{background:#e9e9e9;}
+
+.fTop{
+    padding:80px 0;
+    position:relative;
+    border-bottom:1px solid #cccccc;
+    margin-bottom:10px;
+}
+
+
+.fmenuList{
+    float:left;
+    margin-right:50px;
+    line-height:30px;
+}
+
+.fmenuList h5 a{
+    background:url(../images/common/aroow_R.png) no-repeat right center;
+    padding-right:15px;
+    font-size:16px;
+}
+
+.fmenuList dt{
+    font-weight:900;
+}
+.fmenuList dd{
+    font-size:14px;
+}
+
+.fmenuList dd:hover a{color:#02B5E4;}
+
+.family{
+    width:160px;
+    height:40px;
+    line-height:40px;
+    background:#fff;
+    padding:0 15px;
+    position:absolute;
+    top:50px;
+    right:0;
+}
+
+.family img{
+    position:absolute;
+    right:10%;
+    top:14px;
+    transition:transform 1s;
+}
+
+.family:hover img{transform:rotate(360deg)}
+
+.topBtn{
+    font-size:14px;
+    background:url(../images/common/aroow_T_g.png) #02B5E4 no-repeat center 12%;
+    position:fixed;
+    right:20px;
+    bottom:150px;
+    border-radius:50%;
+    animation:topBtn 0.8s infinite alternate;
+}
+@keyframes topBtn{
+    from{bottom:150px;} to{bottom:180px;}
+}
+.topBtn a{
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:45px;
+    text-align:center;
+    border-color:#828C8F;
+}
+
+.fBottom{
+    color:#8a8a8a;
+    font-size:14px;
+    position:relative;
+    letter-spacing:0.5px;
+    padding-bottom:30px;
+}
+.fBottom a{color:#8a8a8a;}
+
+.fBMemu li{
+    float:left;
+    line-height:24px;
+    margin:10px 0;
+}
+.fBMemu li:first-child{font-weight:900;}
+.fBMemu li::before{
+    content:""; display:inline-block; 
+    width:1px; height:8px; background:#9595;
+    margin:0 10px;
+}
+.fBMemu li:last-child::before, .fBMemu li:first-child::before{
+    display:none;
+}
+
+.fBMemu li:hover a{color:#000;}
+
+.fBMemu li img{margin-left:10px;}
+
+.fBottom p{margin-bottom:10px;}
+
+.fSns{
+    position:absolute;
+    right:0;
+    top:0;
+}
+.fSns li{
+    height:34px;
+    width:34px;
+    float:left;
+    background:url(../images/common/btn_Youtube.png) #ccc no-repeat center center;
+    border-radius:50%;
+    text-indent:-9999px;
+    margin-left:8px;
+    transition:background-color 0.5s;
+}
+.fSns li a{
+    display:block;
+    height:100%;
+}
+
+.fSns .linked{background-image:url(../images/common/btn_LIn.png);}
+.fSns .facebook{background-image:url(../images/common/btn_Facebook.png);}
+.fSns .naver{background-image:url(../images/common/btn_naver.png);}
+
+.fSns li:hover{background-color:#ff0000;}
+.fSns .linked:hover{background-color:#0073b1;}
+.fSns .facebook:hover{background-color:#4267b2;}
+.fSns .naver:hover{background-color:#21c603;}
+
+
+.flang{
+    background:url(../images/common/aroow_T_B.png) no-repeat right center;
+    letter-spacing:-0.3px;
+    position:absolute;
+    right:0;
+    bottom:40px;
+}
+.flang a{
+    padding-right:15px;
+    color:#000;
+}
+
+
